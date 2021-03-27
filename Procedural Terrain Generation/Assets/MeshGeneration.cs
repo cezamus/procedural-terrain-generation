@@ -85,6 +85,11 @@ public class MeshGeneration : MonoBehaviour
     float privzHeightDependence;
     float privxHDependence;
     float privzHDependence;
+    // WARNING
+    // Functions using 'privs' are currently commented.
+    // They anable user to change the atributes when the application runs in editor
+    // however this feature does not work well if consecutive chcnges are entered
+    // too quicky.
 
     // Colors setup
     Color[] colors;
@@ -106,7 +111,7 @@ public class MeshGeneration : MonoBehaviour
 
         CalculateExponentials();
         UpdateMesh();
-        SetPrivs();
+        //SetPrivs();
     }
 
     void SetPrivs()
@@ -241,7 +246,7 @@ public class MeshGeneration : MonoBehaviour
     void Update()
     {
         UpdateTerrainPosition();
-        CheckPrivs();
+        //CheckPrivs();
     }
 
     void CheckPrivs()
