@@ -1,4 +1,5 @@
 # Procedural 3D Terrain Generation in Unity Engine
+December 2020 - February 2021
 
 ##### Author
 Cezary Muszyński
